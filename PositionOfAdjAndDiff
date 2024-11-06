@@ -1,0 +1,11 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+public class Main { 
+    public static void main(String[] args) {
+        int[] arr = {11, 22, 12, 24, 13, 26, 14};
+        int p = 5;
+
+        int r = (arr[p] - arr[p - 1]) + (arr[p] - arr[p + 1]);
+        System.out.println(r);
+    }
+}
