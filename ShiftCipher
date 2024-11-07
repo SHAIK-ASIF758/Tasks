@@ -1,0 +1,21 @@
+class ShiftCipher  {
+
+    public static String shiftCharacters(String s) {
+        StringBuilder sb = new StringBuilder();
+        int sh = 3;
+        for (char c : s.toCharArray()) {
+            char sc = (char) (c + sh);
+            if (sc > 'z') {
+                sc -= 26;
+            }
+            sb.append(sc);
+        }
+        return sb.toString();
+    }
+
+    public static void main(String[] args) {
+        String s = "yhqgz";
+        String r = shiftCharacters(s);
+        System.out.println(r);
+    }
+}
